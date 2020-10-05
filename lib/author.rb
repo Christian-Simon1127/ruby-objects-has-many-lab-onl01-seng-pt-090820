@@ -8,11 +8,11 @@ class Author
   
   def add_post(post1)
     @posts << post1
-    post.artist = self
+    post1.artist = self
   end 
   
   def add_post_by_title(name)
-    post = Post.new(name)
+    post1 = Post.new(name)
     self.add_post(post1)
   end
   
